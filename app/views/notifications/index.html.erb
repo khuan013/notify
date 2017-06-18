@@ -1,1 +1,13 @@
 <%= render "notification_center", notifications: @notifications %>
+
+<%= form_for :message, url: messages_path do |f| %>
+ 
+  <p>
+    <%= f.label :body %>
+    <%= f.text_field :body, id: :message_body %>
+  </p>
+ 
+  <p>
+    <%= f.submit  %>
+  </p>
+<% end %>

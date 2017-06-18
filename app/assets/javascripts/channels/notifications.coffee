@@ -9,6 +9,8 @@ App.notifications = App.cable.subscriptions.create "NotificationsChannel",
     # Called when there's incoming data on the websocket for this channel
     $('#notificationList').prepend "#{data.notification}"
     this.update_counter(data.counter)
+    audio = new Audio('/assets/job-done.mp3')
+    audio.play()
 
   update_counter: (counter) ->
     $counter = $('#notification-counter')
