@@ -10,6 +10,9 @@ class MessagesController < ApplicationController
   # GET /messages/1
   # GET /messages/1.json
   def show
+    send_data(@document.file_contents,
+            type: @document.content_type,
+            filename: @document.filename)
   end
 
   # GET /messages/new

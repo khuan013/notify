@@ -3,11 +3,20 @@
 <%= form_for :message, url: messages_path do |f| %>
  
   <p>
-    <%= f.label :body %>
+    <%= f.label :Message %>
     <%= f.text_field :body, id: :message_body %>
   </p>
  
   <p>
     <%= f.submit  %>
   </p>
+<% end %>
+
+<%= form_for :document, url: documents_path do |f| %>
+ <div class="field">
+    <%= f.file_field :file %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>
