@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Example rails server for testing notifications with Actioncable
 
-Things you may want to cover:
+Dependencies:
 
-* Ruby version
+* Rails 5
 
-* System dependencies
+* Ruby 2.4
 
-* Configuration
+* sqlite
 
-* Database creation
 
-* Database initialization
+Test with :
 
-* How to run the test suite
+* Creating Messages
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Uploading Files
